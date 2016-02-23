@@ -1,0 +1,262 @@
+@import 'swiper';
+@import 'var';
+body{
+	background-color: #F7F7F7;
+}
+$sideGap:1.2rem;
+#pics{
+	height: 20rem;
+	img{
+		position: absolute;
+		min-width: 100%;
+		min-height: 100%;
+	}
+	.swiper-pagination-bullet{
+		background-color: #fff;
+		opacity: 0.2;
+	}
+	.swiper-pagination-bullet-active{
+		background-color: #fff;
+		opacity: 1;
+	}
+}
+#info{
+	position: relative;
+	overflow: hidden;
+	$infoHeight: 3.45rem;
+	height: $infoHeight;
+	background-color: #fff;
+	padding: 0 $sideGap;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+	#uname{
+		font-size: 0.8rem;
+		color: #4A4A4A;
+		padding: 0.7rem 0 0.45rem;
+		line-height: 1em;
+	}
+	#uInfo{
+		color: #9B9B9B;
+		font-size: 0.7rem;
+		.gap{
+			margin: 0 0.05rem;
+		}
+		span{
+			vertical-align: middle;
+		}
+		#uSex{
+			display: inline-block;
+			width: 0.8rem;
+			height: 0.8rem;
+			margin: 0;
+			background-size: 100% 100%;
+		}
+		#uSex.male{
+			background-image: $maleFlagImg;
+		}
+		#uSex.female{
+			background-image: $femaleFlagImg;
+		}
+	}
+	#kaoPuAct{
+		position: absolute;
+		$kaoPuHeight: 1.5rem;
+		height: $kaoPuHeight;
+		right: $sideGap;
+		bottom: ($infoHeight - $kaoPuHeight) / 2;
+		img{
+			height: 100%;
+			margin: 0;
+			display: none;
+		}
+	}
+	#kaoPuAct.empty{
+		.empty{
+			display: block;
+		}
+	}
+	#kaoPuAct.fill{
+		.fill{
+			display: block;
+		}
+	}
+	#kaoPuAct:active{
+		opacity: 0.5;
+	}
+}
+#detail{
+	background-color: #fff;
+	margin-top: 0.5rem;
+	padding: 1px $sideGap 2rem;
+	text-align: center;
+	#uHead{
+		display: inline-block;
+		padding: 0.1rem;
+		margin: 0.8rem 0 0.35rem;
+		border-radius: 50%;
+		.bgCon{
+			width: 2.5rem;
+			height: 2.5rem;
+			border-radius: 50%;
+		}
+	}
+	#uNum{
+		color: #E2D0C4;
+		font-size: 0.7rem;
+		line-height: 1em;
+		margin-bottom: 0.9rem;
+	}
+	.subTitle{
+		text-align: left;
+		font-size: 0.8rem;
+		color: #9B9B9B;
+	}
+	.textInfo{
+		color: #4A4A4A;
+		font-size: 0.7rem;
+		line-height: 1rem;
+		text-align: left;
+		text-indent: 1.5em;
+		margin: 0.6rem 0 2.5rem;
+	}
+	#uKaoPuErs{
+		text-align: left;
+		margin-top: 0.9rem;
+		margin-bottom: 2rem;
+		.bgCon{
+			display: inline-block;
+			width: 2.5rem;
+			height: 2.5rem;
+			vertical-align: top;
+			margin-right: 0.5rem;
+			margin-bottom: 0.5rem;
+			border-radius: 0.15rem;
+		}
+		.bgCon:last-child{
+			margin-right: 0;
+		}
+	}
+	#uRecommendations{
+		.recommends{
+			text-align: left;
+			margin-top: 1.15rem;
+			.quote{
+				height: 0.65rem;
+				display: block;
+				margin: 0;
+			}
+			.text{
+				font-size: 0.7rem;
+				color: #4A4A4A;
+				margin-left: 0.8rem;
+				line-height: 1rem;
+			}
+			.author{
+				text-align: right;
+				margin-top: 0.2rem;
+				.name{
+					display: inline-block;
+					vertical-align: bottom;
+					font-size: 0.7rem;
+					line-height: 1em;
+					color: #9B9B9B;
+					margin-right: 0.75rem;
+				}
+				.bgCon{
+					display: inline-block;
+					vertical-align: bottom;
+					width: 2.5rem;
+					height: 2.5rem;
+					border-radius: 0.15rem;
+				}
+			}
+		}
+	}
+}
+#sendRecommend{
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	//opacity: 1;
+	z-index: $maskZIndex;
+	//background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0);
+	$aniTime: 0.3s;
+	transition-duration: $aniTime;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color;
+	.mask{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+	.main{
+		position: absolute;
+		left: 0;
+		top: 0;
+		//top: -16rem;
+		right: 0;
+		z-index: 10;
+		transition-duration: $aniTime;
+		transition-timing-function: ease-in-out;
+		transition-property: transform;
+		transform: translateY(-100%);
+	}
+	.box{
+		background-color: #fff;
+		padding: 1.2rem $sideGap;
+		.title{
+			height: 1.15rem;
+			display: block;
+			margin: auto;
+		}
+		.quote{
+			height: 0.65rem;
+			margin-top: 1.35rem;
+			display: block;
+		}
+		textarea{
+			margin-top: 0.1rem;
+			width: 100%;
+			padding-left: 0.8rem;
+			font-size: 0.7rem;
+			height: 4rem;
+		}
+		.author{
+			text-align: right;
+			margin-top: 0.5rem;
+			.name{
+				display: inline-block;
+				vertical-align: bottom;
+				color: #9B9B9B;
+				font-size: 0.7rem;
+				margin-right: 0.75rem;
+			}
+			.bgCon{
+				display: inline-block;
+				vertical-align: bottom;
+				width: 2.5rem;
+				height: 2.5rem;
+				border-radius: 0.15rem;
+			}
+		}
+	}
+	.submit{
+		width: 100%;
+		background-color: $green;
+		color: #fff;
+		height: 2.5rem;
+		font-size: 0.7rem;
+		border-bottom-left-radius: 0.25rem;
+		border-bottom-right-radius: 0.25rem;
+		//border-bottom: solid 1px #aaa;
+	}
+	.submit:active{
+		background-color: $greenClicked;
+	}
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no"/>
+    <title>约会任务进度</title>
+    <link href="../css/base.css?v=mv" rel="stylesheet"/>
+    <link href="../css/dating.css?v=mv" rel="stylesheet"/>
+</head>
+<body class='noTab'>
+    <div id='top'>
+        <div class="flag fNum"></div>
+        <div class="title">共同完成<span class='taskNum'></span>个约会任务</div>
+        <div class="main">
+            <div class="box female">
+                <div class="bgCon"></div>
+                <div class="info">
+                    <div class="num"></div>
+                    <div class="name"></div>
+                </div>
+            </div>
+            <img class="fire" src="../img/actDetail/whiteFire.png">
+            <div class="box male">
+                <div class="bgCon"></div>
+                <div class="info">
+                    <div class="num"></div>
+                    <div class="name"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img id="datingTitle" src="../img/actDetail/datingTitle.png">
+    <div id='taskList'>
+        <div class='loading'>加载数据中...</div>
+    </div>
+    <div id='rDelete'>
+        <div class='btns'>
+            <button class='delete'>删除</button>
+            <button class='cancel'>取消</button>
+        </div>
+    </div>
+    <div id='donateBox'>
+        <div class='main'>
+            <div class='content'>
+                <img src="../img/common/blackClose.png" class='close'>
+                <div class='top'>
+                    <div class="bgCon female"></div>
+                    <div class="bgCon male"></div>
+                </div>
+                <div class="tips">喜欢就赞助他们个小红包吧</div>
+                <div class="middle">
+                    <div class="input">
+                        <input type="tel" placeholder='最多不超过200元'>
+                    </div>
+                    <div class="random show">
+                        <div class="sum">
+                            <span class="num"></span>
+                            <span class="unit">元</span>
+                        </div>
+                        <div class="switch">其他金额</div>
+                    </div>
+                </div>
+                <button class="submit">赞助</button>
+            </div>
+        </div>
+    </div>
+    <!-- <div id='inputArea'>
+        <div id='inputBox'>
+            <textarea></textarea>
+            <button>确认</button>
+        </div>
+    </div> -->
+	<script src="../js/lib/zepto.js"></script>
+	<script src="../js/base.js?v=mv"></script>
+	<script src="../js/dating.js?v=mv"></script>
+</body>
+</html>

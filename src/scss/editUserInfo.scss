@@ -1,0 +1,177 @@
+@import 'var';
+$sideGap:0.8rem;
+
+body{
+  font-family: "Microsoft YaHei";
+}
+
+#actNav{
+  $actHeight:8.3rem;
+  background-color: $green;
+  color: #fff;
+  height: $actHeight;
+  padding: 0 $sideGap;
+  text-align: center;
+  #creatorHead{
+    $headSize: 3.2rem;
+    display: inline-block;
+    vertical-align: top;
+    width: $headSize;
+    height: $headSize;
+    border-radius: 50%;
+    margin-top: ($actHeight - $headSize)/2.5;
+    position: relative;
+    border: solid 2px #fff;
+    background-color: #eee;
+  }
+  .actTexts{
+
+    vertical-align: top;
+
+    .line1{
+      font-size: 0.9rem;
+      font-weight: normal;
+      line-height: 1em;
+      margin-top: 1rem;
+      span{
+        margin: 5px;
+        img{
+          width: 0.9rem;
+          height: 0.9rem;
+        }
+      }
+
+    }
+  }
+  $arrowHeight: 1rem;
+  .back{
+    width: 1rem;
+    height: 2rem;
+    float: left;
+
+    margin-top:  ($arrowHeight - $actHeight)/2;
+    background: url(../img/common/whiteLeft.png) no-repeat center center;
+    background-size:cover;
+
+
+  }
+}
+
+#actNav:active{
+  //background-color: $greenClicked;
+  opacity: 0.9;
+}
+
+
+#form{
+  clear: both;
+  padding: 0.5rem 0;
+  margin: 0 $sideGap;
+
+  .inputItem{
+    $inputHeight: 2.5rem;
+    $labelSize: 0.7rem;
+    $labelTop: ($inputHeight - $labelSize)/2;
+    border-bottom: solid 1px $borderColor;
+    label{
+      font-size: $labelSize;
+      color: #A5A5A5;
+      margin-top: $labelTop;
+      line-height: 1em;
+      width: 5em;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .input{
+      font-size: 0.7rem;
+      width: 75%;
+      height: $inputHeight;
+      text-align: left;
+      color: #333;
+      vertical-align: top;
+    }
+    .input.short{
+      width: 20%;
+    }
+    .input.long{
+      width: 50%;
+    }
+    textarea.input{
+      font-family: "Microsoft YaHei";
+      height: 4rem;
+      margin: 0.8rem 0;
+    }
+  }
+  #photos{
+    .title{
+      font-size: 0.7rem;
+      color: #A5A5A5;
+      margin-top: 1rem;
+      line-height: 1em;
+    }
+    .imgs{
+      padding-bottom: 1.15rem;
+      border-bottom: solid 1px $borderColor;
+      .imgBlock{
+        display: inline-block;
+        vertical-align: top;
+        width: 4rem;
+        height: 4rem;
+        margin-right: 0.6rem;
+        margin-top: 0.75rem;
+        position: relative;
+        overflow: hidden;
+        .text{
+          position: absolute;
+          display: none;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          bottom: 0;
+          font-size: 0.5rem;
+          color: #fff;
+          z-index: 6;
+        }
+        .delete{
+          position: absolute;
+          width: 0.4rem;
+          padding: 0.2rem;
+          right: 0rem;
+          top: 0rem;
+          background-color: $green;
+          z-index: 10;
+        }
+        .progress{
+          position: absolute;
+          z-index: 5;
+          display: none;
+        }
+      }
+      .imgBlock.ing{
+        .text{
+          display: block;
+        }
+        .progress{
+          display: block;
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          background-color: $green;
+          // transition-duration: 0.3s;
+          // transition-timing-function: ease-in-out;
+          // transition-property: top;
+        }
+      }
+      .imgBlock.empty{
+        background-image: url('../img/common/add.png');
+        background-size: 100% 100%;
+      }
+      .imgBlock.head{
+        .text{
+          display: block;
+          background-color: rgba(0,0,0,0.5);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,726 @@
+@import 'var';
+$n1: url(../img/actDetail/n1.png);
+$n2: url(../img/actDetail/n2.png);
+$n3: url(../img/actDetail/n3.png);
+$n4: url(../img/actDetail/n4.png);
+$n5: url(../img/actDetail/n5.png);
+#datingTitle{
+	display: block;
+	height: 0.7rem;
+	margin: 1.35rem auto 1.15rem;
+}
+#top{
+	//width: 19rem;
+	//margin: 0 auto 1.25rem;
+	padding: 1px 0 0.6rem;
+	//border-radius: 0.2rem;
+	color: #fff;
+	position: relative;
+	overflow: visible;
+	text-align: center;
+	.flag{
+		position: absolute;
+		width: 2.05rem;
+		height: 1.15rem;
+		background-size: 100% 100%;
+		font-size: 0.7rem;
+		left: -0.2rem;
+		top: 0.65rem;
+		line-height: 1.5em;
+		text-align: left;
+		text-indent: 0.65rem;
+	}
+	.title{
+		margin: 0.75rem 0 1.1rem 2.5rem;
+		line-height: 1em;
+		font-size: 0.7rem;
+		text-align: left;
+	}
+	.main{
+		position: relative;
+		overflow: visible;
+		display: inline-block;
+		padding-bottom: 1rem;
+		.box{
+			display: inline-block;
+			vertical-align: middle;
+			text-align: left;
+			background-color: rgba(255,255,255,0.6);
+			border-radius: 0.2rem;
+			width: 7.5rem;
+			height: 3.25rem;
+			.bgCon{
+				display: inline-block;
+				vertical-align: top;
+				width: 2rem;
+				height: 2rem;
+				border-radius: 50%;
+				margin: 0.6rem 0 0 0.6rem;
+				background-color: rgba(255,255,255,0.5);
+			}
+			.info{
+				display: inline-block;
+				vertical-align: top;
+				color: #4A4A4A;
+				font-size: 0.7rem;
+				margin-left: 0.8rem;
+				.num{
+					line-height: 1em;
+					margin: 0.7rem 0 0.25rem;
+				}
+				.name{
+					line-height: 1em;
+				}
+			}
+		}
+		.box:active{
+			background-color: rgba(255,255,255,0.5);
+		}
+		.fire{
+			vertical-align: middle;
+			height: 1.4rem;
+			opacity: 0.5;
+			margin: 0 0.55rem;
+		}
+		.tips{
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			font-size: 0.7rem;
+		}
+	}
+}
+#top.p1{
+	background-color: #FBC700;
+	.flag{
+		background-image: $n1;
+	}
+}
+// #top.p1:active{
+// 	background-color: #DEB000;
+// }
+#top.p2{
+	background-color: #2489B4;
+	.flag{
+		background-image: $n2;
+	}
+}
+// #top.p2:active{
+// 	background-color: #237598;
+// }
+#top.p3{
+	background-color: #56B424;
+	.flag{
+		background-image: $n3;
+	}
+}
+// #top.p3:active{
+// 	background-color: #499820;
+// }
+#top.p4{
+	background-color: #A19970;
+	.flag{
+		background-image: $n4;
+	}
+}
+// #top.p4:active{
+// 	background-color: #8A835F;
+// }
+#top.p5{
+	background-color: #7A5786;
+	.flag{
+		background-image: $n5;
+	}
+}
+// #top.p5:active{
+// 	background-color: #65476F;
+// }
+#taskList{
+	$radius: 0.25rem;
+	$sideGap: 0.5rem;
+	$nameColor: #576B95;
+	$gapLineColor: #E6E5EC;
+	.task{
+		//width: 19rem;
+		margin: 1rem 0.9rem;
+		padding-bottom: 0.2rem;
+		background-color: #F0EFF5;
+		border-radius: $radius;
+		.title{
+			background-color: #9C98B0;
+			color: #fff;
+			font-size: 0.7rem;
+			line-height: 1em;
+			font-weight: bold;
+			padding: 0.6rem 0;
+			border-top-left-radius: $radius;
+			border-top-right-radius: $radius;
+			.content{
+				margin: 0 $sideGap;
+				position: relative;
+				overflow: hidden;
+				img{
+					position: absolute;
+					right: 0;
+					top: 0;
+					height: 0.7rem;
+					z-index: 10;
+				}
+				img:active{
+					opacity: 0.5;
+				}
+				// background-position: center right;
+				// background-image: $finished;
+				// background-size: auto 0.7rem;
+				// background-repeat: no-repeat;
+			}
+		}
+		.middle{
+			padding: 0.5rem $sideGap;
+			.text{
+				font-size: 0.7rem;
+				overflow: hidden;
+				.author{
+					font-weight: bold;
+					color: #ea4c89;
+				}
+				.content{
+					color: #000;
+					font-weight: normal;
+				}
+			}
+			.text.tooLong{
+				max-height: 5rem;
+			}
+			.showMore{
+				display: none;
+				font-size: 0.7rem;
+				color: $nameColor;
+				padding: 0.3rem 0 0;
+			}
+			.showMore.show{
+				display: block;
+			}
+			// .showMore:active{
+			// 	background-color: #eee;
+			// }
+			.photos{
+				margin-top: 0.5rem;
+				border-top: solid 1px $gapLineColor;
+				.bgCon{
+					width: 4rem;
+					height: 4rem;
+					border-radius: 0.2rem;
+					display: inline-block;
+					vertical-align: top;
+					margin-top: 0.35rem;
+					margin-right: 0.35rem;
+				}
+			}
+			.doAct{
+				display: none;
+			}
+			.tips{
+				text-align: left;
+				.date{
+					color: #4A4A4A;
+					font-size: 0.5rem;
+				}
+				.cmd{
+					position: relative;
+					overflow: visible;
+					float: right;
+					.act{
+						height: 0.75rem;
+						padding: 0.2rem 0 0.2rem 0.2rem;
+					}
+					.tools{
+						position: absolute;
+						display: none;
+						right: 100%;
+						top: 0;
+						width: 9rem;
+						height: 1.8rem;
+						border-radius: 0.2rem;
+						overflow: hidden;
+						.btns{
+							position: absolute;
+							left: 100%;
+							transition-duration: 200ms;
+							transition-timing-function: ease-in-out;
+							transition-property: left;
+							height: 100%;
+							width: 100%;
+							text-align: center;
+							background-color: #4A4A4A;
+							border-radius: 0.2rem;
+							button{
+								font-size: 0.5rem;
+								color: #fff;
+								height: 100%;
+								width: 33%;
+								margin: 0;
+								vertical-align: top;
+								img{
+									height: 0.8rem;
+									margin-right: 0.1rem;
+									vertical-align: middle;
+								}
+							}
+							.gap{
+								position: absolute;
+								z-index: 10;
+								background-color: #383838;
+								width: 1px;
+								height: 60%;
+								top: 20%;
+							}
+							.gap.left{
+								left: 33%;
+							}
+							.gap.right{
+								right: 33%;
+							}
+						}
+					}
+				}
+			}
+		}
+		$rightGap: 0.3rem;
+		$topGap: 0.15rem;
+		//$headSize: 0.9rem;
+		$headSize: 1.25rem;
+		$fontSize: 0.7rem;
+		$nameActBg: #bbb;
+		$replyActBg: #bbb;
+		$headBorderRadius: 0rem;
+		//$lineHeight: 1.2rem;
+		//$markSize: 0.5rem;
+		.praises{
+			margin: 0 $sideGap;
+			padding: 1px 0;
+			clear: both;
+			//border-bottom: solid 1px #E6E5EC;
+			border-top: solid 1px #E6E5EC;
+			min-height: $headSize;
+			.liked{
+				// height: 0.85rem;
+				// vertical-align: middle;
+				width: $headSize;
+				height: $headSize;
+				float: left;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 0.8rem;
+				background-image: $liked;
+				//margin-right: $rightGap;
+			}
+			.list{
+				color: #4A4A4A;
+				font-size: $fontSize;
+				padding-top: 0.1rem;
+				margin-left: $headSize + $rightGap;
+				//line-height: $lineHeight;
+				.name{
+					color: $nameColor;
+					font-weight: bold;
+				}
+				.name:active{
+					background-color: $nameActBg;
+				}
+			}
+		}
+		.praises.empty{
+			display: none;
+		}
+		.donates{
+			clear: both;
+			margin: 0 $sideGap 0.2rem;
+			//border-bottom: solid 1px $gapLineColor;
+			border-top: solid 1px $gapLineColor;
+			padding: 0.2rem 0 0;
+			min-height: $headSize;
+			.rItem{
+				margin-bottom: 0.5rem;
+				//padding: 1px 0;
+				clear: both;
+				min-height: $headSize;
+				padding-top: 1px;
+				.head{
+					// display: inline-block;
+					// vertical-align: middle;
+					float: left;
+					width: $headSize;
+					height: $headSize;
+					border-radius: $headBorderRadius;
+					//margin-right: $rightGap;
+					position: relative;
+					overflow: visible;
+					.mark{
+						position: absolute;
+						width: 0.5rem;
+						right: -0.1rem;
+						bottom: -0.1rem;
+					}
+				}
+				.commentText{
+					// display: inline-block;
+					// vertical-align: middle;
+					font-size: $fontSize;
+					margin-top: $topGap;
+					margin-left: $headSize + $rightGap;
+					//line-height: $lineHeight;
+					.name{
+						color: $nameColor;
+						font-weight: bold;
+					}
+					.name.hover{
+						background-color: $nameActBg;
+					}
+					.sum{
+						color: red;
+						font-weight: bold;
+					}
+				}
+				.commentText.hover{
+					background-color: $replyActBg;
+				}
+			}
+			.rItem.tmpHide{
+				display: none;
+			}
+		}
+		.donates.empty{
+			display: none;
+		}
+		.donates.tmpHide{
+			display: none;
+		}
+		.comments{
+			clear: both;
+			margin: 0 $sideGap 0.2rem;
+			border-top: solid 1px $gapLineColor;
+			padding: 0.2rem 0 0;
+			.rItem{
+				margin-bottom: 0.2rem;
+				clear: both;
+				min-height: $headSize;
+				padding-top: 1px;
+				.head{
+					// display: inline-block;
+					// vertical-align: top;
+					float: left;
+					width: $headSize;
+					height: $headSize;
+					border-radius: $headBorderRadius;
+					//margin-right: $rightGap;
+				}
+				.commentText{
+					// display: inline-block;
+					// vertical-align: top;
+					margin-top: $topGap;
+					font-size: $fontSize;
+					margin-left: $headSize + $rightGap;
+					//width: 15rem;
+					//line-height: $lineHeight;
+					.name{
+						color: $nameColor;
+						font-weight: bold;
+					}
+					.name.hover{
+						background-color: $nameActBg;
+					}
+					.reply{
+
+					}
+					.target{
+						color: $nameColor;
+						font-weight: bold;
+					}
+					.target.hover{
+						background-color: $nameActBg;
+					}
+					.reply.hide{
+						display: none;
+					}
+					.target.hide{
+						display: none;
+					}
+					.content{
+
+					}
+				}
+				.commentText.hover{
+					background-color: $replyActBg;
+				}
+			}
+			.rItem.tmpHide{
+				display: none;
+			}
+		}
+		.comments.empty{
+			display: none;
+		}
+		.comments.tmpHide{
+			display: none;
+		}
+		.replyBox{
+			display: none;
+			//text-align: center;
+			margin: 0 $sideGap;
+			padding: 0.1rem 0 0.5rem;
+			.head{
+				display: inline-block;
+				width: $headSize;
+				height: $headSize;
+				border-radius: $headBorderRadius;
+				vertical-align: top;
+			}
+			textarea{
+				margin-left: $rightGap;
+				width: 70%;
+				height: 4rem;
+				border: solid 1px #eee;
+				font-size: 0.7rem;
+				vertical-align: bottom;
+			}
+			button{
+				background-color: $green;
+				color: #fff;
+				font-size: 0.7rem;
+				padding: 0.2rem 0;
+				width: 15%;
+				margin-left: 3%;
+				border-radius: 0.2rem;
+				vertical-align: bottom;
+			}
+			button:active{
+				background-color: $greenClicked;
+			}
+		}
+		.replyBox.show{
+			display: block;
+		}
+	}
+	.task.new{
+		.title{
+			background-color: $green;
+			.content{
+				//background-image: none;
+				img{
+					display: none;
+				}
+			}
+		}
+		.middle{
+			.text{
+				display: none;
+			}
+			.photos{
+				display: none;
+			}
+			.doAct{
+				display: block;
+				background-color: $green;
+				color: #fff;
+				margin: 2rem auto;
+				font-size: 0.7rem;
+				height: 2rem;
+				padding: 0 2.4rem;
+				border-radius: 2rem;
+			}
+			.doAct:active{
+				background-color: $greenClicked;
+			}
+		}
+	}
+}
+#rDelete{
+	position: fixed;
+	display: none;
+	z-index: $maskZIndex;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0);
+	$aniTime: 300ms;
+	transition-duration: $aniTime;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color;
+	.btns{
+		position: absolute;
+		left: 0;
+		right: 0;
+		background-color: #eee;
+		bottom: -6rem;
+		transition-duration: $aniTime;
+		transition-timing-function: ease-in-out;
+		transition-property: bottom;
+		button{
+			width: 100%;
+			display: block;
+			background-color: rgba(255,255,255,1);
+			font-size: 0.8rem;
+			text-align: center;
+			height: 2.8rem;
+			font-weight: normal;
+		}
+		button.delete{
+			color: red;
+			margin-bottom: 0.4rem;
+		}
+		button:active{
+			background-color: rgba(255,255,255,0.5);
+		}
+	}
+}
+#donateBox{
+	position: fixed;
+	display: none;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: $maskZIndex;
+	background-color: rgba(0,0,0,0.8);
+	$aniTime: 300ms;
+	opacity: 0;
+	transition-duration: $aniTime;
+	transition-timing-function: ease-in-out;
+	// transition-property: background-color;
+	transition-property: opacity;
+	.main{
+		// transition-duration: $aniTime;
+		// transition-timing-function: ease-in-out;
+		// transition-property: opacity;
+		// opacity: 0;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		top: 2rem;
+		.content{
+			background-color: #F7F7F7;
+			margin: auto;
+			width: 17rem;
+			padding: 1rem 0 1.4rem;
+			border-radius: 0.25rem;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+			.close{
+				position: absolute;
+				width: 0.8rem;
+				padding: 1rem;
+				left: 0;
+				top: 0;
+				z-index: 10;
+			}
+			.close:active{
+				background-color: #ddd;
+			}
+			.top{
+				.bgCon{
+					display: inline-block;
+					width: 4rem;
+					height: 4rem;
+					border: solid 0.1rem #fff;
+					border-radius: 50%;
+					vertical-align: top;
+				}
+				.male{
+					margin-left: -1rem;
+				}
+			}
+			.tips{
+				color: #4A4A4A;
+				font-size: 0.7rem;
+				margin-top: 0.9rem;
+			}
+			.middle{
+				margin-top: 2.1rem;
+				height: 6rem;
+				.input{
+					display: none;
+					input{
+						text-align: center;
+						font-size: 0.9rem;
+						border: solid 1px #979797;
+						border-radius: 2rem;
+						height: 3rem;
+						width: 10.8rem;
+					}
+				}
+				.input.show{
+					display: block;
+				}
+				.random{
+					display: none;
+					.sum{
+						color: #4A4A4A;
+						.num{
+							font-size: 3.2rem;
+						}
+						.unit{
+							font-size: 0.7rem;
+						}
+					}
+					.switch{
+						color: #4A90E2;
+						font-size: 0.6rem;
+						margin-top: 0.8rem;
+					}
+				}
+				.random.show{
+					display: block;
+				}
+			}
+			.submit{
+				color: #fff;
+				background-color: $green;
+				font-size: 0.9rem;
+				width: 8.5rem;
+				height: 2.25rem;
+				margin-top: 1rem;
+				border-radius: 1.3rem;
+			}
+			.submit:active{
+				background-color: $greenClicked;
+			}
+		}
+	}
+}
+#donateBox.show{
+	display: block;
+}
+// #inputArea{
+// 	position: absolute;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 100%;
+// 	top: 0;
+// }
+// #inputBox{
+// 	position: absolute;
+// 	//display: none;
+// 	bottom: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	z-index: $footerZIndex;
+// 	background-color: #fff;
+// 	padding: 0.5rem 0;
+// 	border-top: solid 1px #eee;
+// 	textarea{
+// 		width: 80%;
+// 		height: 1.8rem;
+// 		border: solid 1px #eee;
+// 		border-radius: 0.5rem;
+// 		font-size: 0.8rem;
+// 		line-height: 1.2em;
+// 	}
+// 	button{
+// 		width: 15%;
+// 		color: #fff;
+// 		background-color: $green;
+// 	}
+// }

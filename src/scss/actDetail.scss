@@ -1,0 +1,250 @@
+@import 'var';
+$radius: 0.25rem;
+$topHeight:5.45rem;
+$gray:#F0EFF5;
+body{
+	background-color: #eee;
+}
+#card{
+	//margin: 10px 7px 0;
+	min-height: 100%;
+	color: #fff;
+	text-align: center;
+	//border-radius: $radius;
+	.top{
+		padding: 1rem 0 1.85rem;
+		position: relative;
+		overflow: hidden;
+		background-color: $green;
+		.sf{
+			position: absolute;
+			width: 3.15rem;
+			left: 0;
+			top: 1.4rem;
+			z-index: 10;
+		}
+		.head{
+			position: relative;
+			overflow: visible;
+			border-radius: 50%;
+			background-color: #fff;
+			padding: 0.1rem;
+			display: inline-block;
+			.bgCon{
+				border-radius: 50%;
+				width: 4rem;
+				height: 4rem;
+			}
+			.v{
+				position: absolute;
+				height: 1.15rem;
+				left: 2rem;
+				bottom: 0.45rem;
+			}
+		}
+		.title{
+			font-size: 0.8rem;
+			font-weight: bold;
+			line-height: 1em;
+			margin-top: 0.5rem;
+		}
+		.info{
+			font-size: 0.7rem;
+			line-height: 1em;
+			margin-top: 0.6rem;
+		}
+	}
+	.middle{
+		background-color: #f7f7f7;
+		canvas{
+			margin: 0;
+			height: 10rem;
+			display: block;
+		}
+	}
+	.bottom{
+		.buttons{
+			display: none;
+			padding: 1.15rem 0;
+			button{
+				color: #fff;
+				font-size: 0.7rem;
+				font-weight: lighter;
+				border-radius: 2rem;
+				//border: solid 1px #fff;
+				height: 2rem;
+				width: 7rem;
+				background-color: $green;
+			}
+			button:first-child{
+				margin-right: 1.1rem;
+			}
+			button:active{
+				opacity: 0.7;
+			}
+			button.unable{
+				background-color: #ccc;
+			}
+		}
+	}
+}
+#result{
+	display: none;
+	$n1: url(../img/actDetail/n1.png);
+	$n2: url(../img/actDetail/n2.png);
+	$n3: url(../img/actDetail/n3.png);
+	$n4: url(../img/actDetail/n4.png);
+	$n5: url(../img/actDetail/n5.png);
+	#datingTitle{
+		display: block;
+		height: 0.7rem;
+		margin: 1.35rem auto 1.15rem;
+	}
+	.pair{
+		//$sideGap: 1rem;
+		width: 19rem;
+		margin: 0 auto 1.25rem;
+		padding: 1px 0 0.6rem;
+		border-radius: 0.2rem;
+		color: #fff;
+		position: relative;
+		overflow: visible;
+		//line-height: 0;
+		text-align: center;
+		.flag{
+			position: absolute;
+			width: 2.05rem;
+			height: 1.15rem;
+			background-size: 100% 100%;
+			font-size: 0.7rem;
+			left: -0.2rem;
+			top: 0.65rem;
+			line-height: 1.5em;
+			text-align: left;
+			text-indent: 0.65rem;
+		}
+		.title{
+			margin: 0.75rem 0 1.1rem 2.5rem;
+			line-height: 1em;
+			font-size: 0.7rem;
+			text-align: left;
+		}
+		.main{
+			position: relative;
+			overflow: visible;
+			display: inline-block;
+			padding-bottom: 2rem;
+			.box{
+				display: inline-block;
+				vertical-align: middle;
+				text-align: left;
+				background-color: rgba(255,255,255,0.6);
+				border-radius: 0.2rem;
+				width: 7.5rem;
+				height: 3.25rem;
+				.bgCon{
+					display: inline-block;
+					vertical-align: top;
+					width: 2rem;
+					height: 2rem;
+					border-radius: 50%;
+					margin: 0.6rem 0 0 0.6rem;
+					background-color: rgba(255,255,255,0.5);
+				}
+				.info{
+					display: inline-block;
+					vertical-align: top;
+					color: #4A4A4A;
+					font-size: 0.7rem;
+					margin-left: 0.8rem;
+					.num{
+						line-height: 1em;
+						margin: 0.7rem 0 0.25rem;
+					}
+					.name{
+						line-height: 1em;
+					}
+				}
+			}
+			.fire{
+				vertical-align: middle;
+				height: 1.4rem;
+				opacity: 0.5;
+				margin: 0 0.55rem;
+			}
+			.tips{
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				font-size: 0.7rem;
+			}
+		}
+		
+	}
+	.pair.p1{
+		background-color: #FBC700;
+		.flag{
+			background-image: $n1;
+		}
+	}
+	.pair.p1:active{
+		background-color: #DEB000;
+	}
+	.pair.p2{
+		background-color: #2489B4;
+		.flag{
+			background-image: $n2;
+		}
+	}
+	.pair.p2:active{
+		background-color: #237598;
+	}
+	.pair.p3{
+		background-color: #56B424;
+		.flag{
+			background-image: $n3;
+		}
+	}
+	.pair.p3:active{
+		background-color: #499820;
+	}
+	.pair.p4{
+		background-color: #A19970;
+		.flag{
+			background-image: $n4;
+		}
+	}
+	.pair.p4:active{
+		background-color: #8A835F;
+	}
+	.pair.p5{
+		background-color: #7A5786;
+		.flag{
+			background-image: $n5;
+		}
+	}
+	.pair.p5:active{
+		background-color: #65476F;
+	}
+	#resultTitle{
+		display: block;
+		height: 0.7rem;
+		margin: 2.5rem auto 1rem;
+	}
+}
+#detailNav{
+	color: $green;
+	text-align: center;
+	padding: 2rem 0;
+	.nav{
+		font-size: 0.7rem;
+		line-height: 1em;
+		font-weight: normal;
+		margin-bottom: 0.4rem;
+	}
+	.arrow{
+		display: block;
+		height: 0.25rem;
+		margin: auto;
+	}
+}

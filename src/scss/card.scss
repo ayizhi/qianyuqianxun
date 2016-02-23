@@ -1,0 +1,153 @@
+@import 'var';
+body{
+	background-color: #4D4D4D;
+}
+$cardWidth:16rem;
+$cardTop:1.75rem;
+#cardDom{
+	width: $cardWidth;
+	margin: $cardTop auto;
+	text-align: center;
+	$headSize:4rem;
+	$headNeck:0.1rem;
+	$headImgSize: $headSize - 2 * $headNeck;
+	.top{
+		position: relative;
+		overflow: visible;
+		border-radius: 50%;
+		background-color: #fff;
+		padding: $headNeck;
+		display: inline-block;
+		.bgCon{
+			border-radius: 50%;
+			width: $headImgSize;
+			height: $headImgSize;
+		}
+		.v{
+			position: absolute;
+			height: 1rem;
+			left: 2.7rem;
+			bottom: 1px;
+		}
+	}
+	$halfHeadSize:$headSize / 2;
+	.middle{
+		background-color: $green;p
+		margin-top: -$halfHeadSize;
+		padding-top: $halfHeadSize;
+		border-top-left-radius: 0.25rem;
+		border-top-right-radius: 0.25rem;
+		padding-bottom: 0.7rem;
+		.name{
+			//color: #1EAD66;
+			color: #fff;
+			font-size: 0.7rem;
+			margin-top: 0.45rem;
+			line-height: 1em;
+		}
+		.title{
+			width: 9rem;
+			height: 0.95rem;
+			margin-top: 0.9rem;
+		}
+		.info{
+			width: 10.8rem;
+			height: 2.05rem;
+			margin-top: 0.6rem;
+			margin-bottom: 0.9rem;
+		}
+		.heads{
+			.head{
+				display: inline-block;
+				vertical-align: top;
+				padding: 0.1rem;
+				background-color: #fff;
+				border-radius: 50%;
+				margin-left: 0.9rem;
+				.bgCon{
+					width: 1.7rem;
+					height: 1.7rem;
+					border-radius: 50%;
+				}
+			}
+			.head:first-child{
+				margin-left: 0;
+			}
+		}
+		.desk{
+			width: 14rem;
+			border-radius: 0.25rem;
+			margin: 0.3rem auto;
+			height: 5.4rem;
+			padding-top: 1px;
+			background-color: #36CE83;
+			color: #fff;
+			.line0{
+				margin-top: 1.5rem;
+				font-size: 0.8rem;
+				font-weight: normal;
+				line-height: 1em;
+			}
+			.line1{
+				margin-top: 0.6rem;
+				font-size: 0.7rem;
+				line-height: 1em;
+				.gap{
+					margin: 0 0.1rem;
+				}
+			}
+		}
+	}
+	.bottom{
+		background-color: #fff;
+		border-bottom-left-radius: 0.25rem;
+		border-bottom-right-radius: 0.25rem;
+		text-align: left;
+		#qrOut{
+			width:2.55rem;
+			height:2.55rem;
+			display: inline-block;
+			margin: 0.35rem;
+			vertical-align: top;
+			#qrCon{
+				display: none;
+				img{
+					width: 100%;
+					display: block;
+					margin: 0;
+				}
+				canvas{
+					display: none;
+				}
+			}
+		}
+		.text{
+			vertical-align: top;
+			display: inline-block;
+			margin-top: 0.65rem;
+			margin-left: 0.2rem;
+			img{
+				display: block;
+				margin: 0;
+			}
+			.line0{
+				width: 2.8rem;
+			}
+			.line1{
+				margin-top: 0.25rem;
+				width: 7.7rem;
+			}
+		}
+		.share{
+			width: 2.05rem;
+			height: 2.05rem;
+			// margin-top: 0.6rem;
+			// margin-right: 0.6rem;
+			float: right;
+			padding: 0.6rem;
+		}
+		.share:active{
+			opacity: 0.8;
+		}
+	}
+}

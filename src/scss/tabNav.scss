@@ -1,0 +1,40 @@
+@import 'var';
+#tabNav{
+	clear: both;
+	$navBg:#F7F7F7;
+	//background-color: $navBg;
+	$borderHeight: 0.2rem;
+	border-bottom: solid 1px #EDEDED;
+	.nav{
+		position: relative;
+		overflow: visible;
+		display: inline-block;
+		text-align: center;
+		width: 50%;
+		vertical-align: top;
+		margin: 0;
+		color: #4A4A4A;
+		font-size: 0.55rem;
+		line-height: 1em;
+		padding: 0.7rem 0;
+		border-bottom: solid $borderHeight rgba(255,255,255,0);
+		.gap{
+			position: absolute;
+			width: 1px;
+			background-color: #EDEDED;
+			top: 0;
+			bottom: -$borderHeight;
+			right: 0;
+		}
+	}
+	.nav.current{
+		color: $green;
+		border-bottom-color: $green;
+	}
+}
+.tabPage{
+	display: none;
+}
+.tabPage.current{
+	display: block;
+}

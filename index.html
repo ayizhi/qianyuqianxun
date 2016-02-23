@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='zh'>
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="Content-Language" content='zh-cn'/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no"/>
+<title>约会挑战</title>
+<style type="text/css">
+li{
+  margin: 2em 0.5em;
+}
+</style>
+</head>
+<body>
+  <ul>
+    <li>
+      <a href="dist/html/createAct.html">创建活动</a>
+    </li>
+    <li>
+      <a href="dist/html/creatorCard.html">创建成功</a>
+    </li>
+    <li>
+      <a href="dist/html/actList.html">活动列表</a>
+    </li>
+    <li>
+      <a href="dist/html/actDetail.html">活动详情</a>
+    </li>
+    <li>
+      <a href="dist/html/registerAct.html">报名活动</a>
+    </li>
+    <li>
+      <a href="dist/html/challengerCard.html?uName=007">报名成功</a>
+    </li>
+    <li>
+      <a href="dist/html/selectGuest.html">挑选嘉宾</a>
+    </li>
+    <li>
+      <a href="dist/html/guestInfo.html">嘉宾详情</a>
+    </li>
+    <li>
+      <a href="dist/html/friendCard.html?uName=aaa&text=very good">好友推荐</a>
+    </li>
+    <li>
+      <a href="dist/html/linkerCard.html?uName=007">连线成功</a>
+    </li>
+    <li>
+      <a href="dist/html/actLinkData.html">连线数据</a>
+    </li>
+    <li>
+      <a href="dist/html/dating.html?fNum=3">约会进度</a>
+    </li>
+    <li>
+      <a href="dist/html/taskPublish.html?fNum=3&taskId=1&taskTitle=新挑战: 一块儿吃个晚饭">提交约会任务</a>
+    </li>
+    <li>
+      <a href="dist/html/danmuUseCanvas.html">canvas 弹幕</a>
+    </li>
+    <li>
+      <a href="dist/html/settings.html">用户设置</a>
+    </li>
+    <li>
+      <a href="dist/html/userInfo.html">用户信息</a>
+    </li>
+    <li>
+      <a href="dist/html/editUserInfo.html">编辑个人信息</a>
+    </li>
+    <li>
+      <a href="dist/html/mobileVerify.html">手机验证</a>
+    </li>
+    <li>
+      <a href="dist/html/reply.html">吐槽入口</a>
+    </li>
+    <li>
+      <a href="dist/html/zLianXian.html">连线Z</a>
+    </li>
+  </ul>
+  <script type="text/javascript" src='src/js/lib/zepto.js'></script>
+  <script type="text/javascript">
+  $('a').each(function(){
+    var curHref = $(this).attr('href');
+    var newHref = curHref;
+    var hasParams = (curHref.indexOf('?')>=0);
+    console.log('curHref',curHref,hasParams);
+    if(hasParams){
+      newHref += '&v='+Math.random();
+    }
+    else{
+      newHref += '?v='+Math.random();
+    }
+    newHref += '&actId=2&uid=dc&sign=sign';
+    $(this).attr('href',newHref);
+  });
+  </script>
+</body>
+</html>

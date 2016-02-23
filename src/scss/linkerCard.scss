@@ -1,0 +1,26 @@
+@import 'var';
+@import 'card';
+#cardDom{
+	.middle{
+		padding-bottom: 0;
+		#uName{
+			color: #fff;
+			font-size: 0.7rem;
+			line-height: 1em;
+			margin-top: 0.2rem;
+		}
+		#pic1{
+			height: 1.25rem;
+			margin: 0.9rem 0 0;
+		}
+		#pic2{
+			height: 2.05rem;
+			margin: 0.6rem 0 0;
+		}
+		#desk{
+			display: block;
+			margin: 0.55rem 0 0;
+			min-height: 10rem;
+		}
+	}
+}

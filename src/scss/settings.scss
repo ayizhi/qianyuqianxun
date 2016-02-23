@@ -1,0 +1,281 @@
+@import "var";
+
+body{
+  background-color: $gray;
+  margin: 0;
+  padding: 0;
+
+}
+#page{
+  background-color:$gray;
+  font-size: 0.75rem;
+  font-family: "Microsoft YaHei";
+
+
+  .peopleInfo{
+    height: 5rem;
+    width: 100%;
+    background-color: #ffffff;
+    .headImg{
+      float: left;
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 0.3rem;
+      border:1px solid $gray;
+      margin-left: 1rem;
+      margin-top: 0.7rem;
+      background:  no-repeat center center;
+      background-size: contain;
+    }
+    .allInfo{
+      float:left;
+      margin-left: 1rem;
+      margin-top: 1.2rem;
+      .name{
+        font-size:0.8rem;
+        font-weight:bold;
+      }
+      .info{
+        color:#9ba3c1;
+        margin-top: 0.3rem;
+        img{
+          float:left;
+          width: 1rem;
+          height: 1rem;
+          //background-color: pink;
+          border-radius: 50%;
+
+        }
+
+      }
+
+    }
+    .rightArrow{
+      float:right;
+      margin-right: 1.25rem;
+      margin-top: 2.2rem;
+      width: 0.4rem;
+      height: 0.8rem;
+      background: url(../img/common/greenRight.png) no-repeat ;
+      background-size: contain;
+    }
+
+  }
+  .myChallenge{
+    margin-top: 1.5rem;
+    background-color: #fff;
+    height: 2.3rem;
+    width: 100%;
+    color:#4e635a;
+    .challengeTitle{
+
+      float: left;
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+
+
+      padding-left: 2rem;
+      height: 1.3rem;
+      line-height: 1.3rem;
+
+      background: url(../img/common/greenFire.png) no-repeat left center;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    .challengeCount{
+      float:left ;
+      margin-top: 0.5rem;
+      margin-left: 8rem;
+
+      font-size: 0.8rem;
+      color:#9b9b9b;
+      line-height: 1.3rem;
+
+    }
+
+
+  }
+  .mySelection{
+    margin-top: 2px;
+    background-color: #fff;
+    height: 2.3rem;
+    width: 100%;
+    color:#4e635a;
+    .mySelectionTitle{
+
+      float: left;
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+
+
+      padding-left: 2rem;
+      height: 1.3rem;
+      line-height: 1.3rem;
+
+      background: url(../img/common/greenFire.png) no-repeat left center;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    .mySelectionCount{
+      float:left ;
+      margin-top: 0.5rem;
+      margin-left: 9.5rem;
+
+      font-size: 0.8rem;
+      color:#9b9b9b;
+      line-height: 1.3rem;
+
+    }
+
+
+  }
+
+
+
+  .myfollows{
+    margin-top: 2px;
+    background-color: #fff;
+    height: 2.3rem;
+    width: 100%;
+    color:#4e635a;
+    .myfollowsTitle{
+
+      float: left;
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+
+
+      padding-left: 2rem;
+      height: 1.3rem;
+      line-height: 1.3rem;
+
+      background: url(../img/common/greenFire.png) no-repeat left center;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    .myfollowsCount{
+      float:left ;
+      margin-top: 0.5rem;
+      margin-left: 9.5rem;
+
+      font-size: 0.8rem;
+      color:#9b9b9b;
+      line-height: 1.3rem;
+
+    }
+
+
+  }
+
+  .myAchievement{
+    margin-top: 2px;
+    background-color: #fff;
+    height: 2.3rem;
+    width: 100%;
+    color:#4e635a;
+    .myAchievementTitle{
+
+      float: left;
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+
+
+      padding-left: 2rem;
+      height: 1.3rem;
+      line-height: 1.3rem;
+
+      background: url(../img/common/greenFire.png) no-repeat left center;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    .myAchievementCount{
+      float:left ;
+      margin-top: 0.5rem;
+      margin-left: 8.7rem;
+
+      font-size: 0.8rem;
+      color:#9b9b9b;
+      line-height: 1.3rem;
+
+    }
+
+
+  }
+
+  .setting{
+    height: 2.5rem;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 1rem;
+    color:#4e635a;
+    .settingTitle{
+
+      float: left;
+      margin-left: 1rem;
+      margin-top: 0.7rem;
+
+
+      padding-left: 2rem;
+      height: 1.3rem;
+      line-height: 1.3rem;
+
+      background: url(../img/common/greenFire.png) no-repeat left center;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    .rightArrow{
+      float:right;
+      margin-right: 1.25rem;
+      margin-top: 0.9rem;
+      width: 0.4rem;
+      height: 0.8rem;
+      background: url(../img/common/greenRight.png) no-repeat ;
+      background-size: contain;
+    }
+
+  }
+
+  .feedBack{
+    height: 2.5rem;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 2px;
+    color:#4e635a;
+    .feedBackTitle{
+
+      float: left;
+      margin-left: 1rem;
+      margin-top: 0.6rem;
+
+
+      padding-left: 2rem;
+      height: 1.3rem;
+      line-height: 1.3rem;
+
+      background: url(../img/common/greenFire.png) no-repeat left center;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    .rightArrow{
+      float:right;
+      margin-right: 1.25rem;
+      margin-top: 0.9rem;
+      width: 0.4rem;
+      height: 0.8rem;
+      background: url(../img/common/greenRight.png) no-repeat ;
+      background-size: contain;
+    }
+
+  }
+
+
+  .rightArrow{
+    float:right;
+    margin-right: 1.25rem;
+    margin-top: 0.8rem;
+    width: 0.4rem;
+    height: 0.8rem;
+    background: url(../img/common/greenRight.png) no-repeat ;
+    background-size: contain;
+  }
+}

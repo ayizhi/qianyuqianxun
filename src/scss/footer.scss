@@ -1,0 +1,84 @@
+@import 'var';
+body.noTab.hasFooter{
+	padding-bottom: $footerHeight;
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: $footerZIndex;
+	border-top: solid 1px $borderColor;
+	background-color: #fff;
+	text-align: center;
+	height: $footerHeight;
+	button{
+		$buttonHeight: 1.8rem;
+		color: #fff;
+		height: $buttonHeight;
+		margin-top: ($footerHeight - $buttonHeight)/2;
+		border-radius: 1.8rem;
+		font-size: 0.7rem;
+	}
+	button.green{
+		background-color: $green;
+		border: solid 1px $green;
+	}
+	button.green:active{
+		background-color: $greenClicked;
+	}
+	button.white{
+		background-color: #fff;
+		color: #000;
+		border: solid 1px #eee;
+	}
+	button.white:active{
+		background-color: #eee;
+	}
+	button.back{
+		display: none;
+	}
+	button.single{
+		width: 19.2rem;
+	}
+	button.half{
+		width: 12em;
+	}
+	button.half:first-child{
+		margin-right: 1rem;
+	}
+}
+.footer.hasBack{
+	$backWidth: 2.5rem;
+	button.back{
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		margin-top: 0;
+		border-radius: 0;
+		height: 100%;
+		width: $backWidth;
+		z-index: 10;
+		background-image: $grayBackArrow;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 0.6rem;
+		border-right: solid 1px #D8D8D8;
+	}
+	button.back:active{
+		opacity: 0.5;
+	}
+	.btns{
+		margin-left: $backWidth;
+		button.single{
+			width: 16rem;
+		}
+		button.half{
+			width: 10em;
+		}
+		button.half:first-child{
+			margin-right: 1rem;
+		}
+	}
+}

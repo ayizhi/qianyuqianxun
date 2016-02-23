@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no"/>
+    <title>挑选嘉宾</title>
+    <link href="../css/base.css?v=mv" rel="stylesheet"/>
+    <link href="../css/selectGuest.css?v=mv" rel="stylesheet"/>
+</head>
+<body class='noTab hasFooter'>
+    <div class='fixTop'>
+        <div id='actNav' class='bgCon'>
+            <div id='creatorHead' class='bgCon'></div>
+            <div class='actTexts'>
+                <div class='line0' id='actTitle'></div>
+                <div class='line1'>
+                    <span id='creatorName'></span>
+                    <span class='gapPoint'>·</span>
+                    <span id='actNum'></span>
+                </div>
+            </div>
+            <img class='arrow' preSrc='../img/common/whiteRight.png'>
+        </div>
+        <div id='tabNav'>
+            <div class='nav current' id='femaleNav' targetId='femaleTab'>选择女嘉宾<div class='gap'></div></div>
+            <div class='nav' id='maleNav' targetId='maleTab'>选择男嘉宾</div>
+        </div>
+        <div class='resultBox' id='maleResult'>
+            <div class='bgCon' id='m0'>
+                <img src='../img/selectGuest/yes.png' class='flag'>
+            </div>
+            <div class='bgCon' id='m1'>
+                <img src='../img/selectGuest/yes.png' class='flag'>
+            </div>
+            <div class='bgCon' id='m2'>
+                <img src='../img/selectGuest/yes.png' class='flag'>
+            </div>
+            <div class='bgCon' id='m3'>
+                <img src='../img/selectGuest/yes.png' class='flag'>
+            </div>
+            <div class='bgCon' id='m4'>
+                <img src='../img/selectGuest/yes.png' class='flag'>
+            </div>
+        </div>
+        <div class='resultBox current' id='femaleResult'>
+            <div class='bgCon' id='f0'>
+                <img src='../img/selectGuest/yes.png' class='flag'>
+            </div>
+            <div class='bgCon' id='f1'>
+                <img src='../img/selectGuest/yes.png' class='flag'>
+            </div>
+            <div class='bgCon' id='f2'>
+                <img src='../img/selectGuest/yes.png' class='flag'>
+            </div>
+            <div class='bgCon' id='f3'>
+                <img src='../img/selectGuest/yes.png' class='flag'>
+            </div>
+            <div class='bgCon' id='f4'>
+                <img src='../img/selectGuest/yes.png' class='flag'>
+            </div>
+        </div>
+    </div>
+    <div class='tabPage current' id='maleTab'></div>
+    <div class='tabPage' id='femaleTab'></div>
+    <div id='detail'>
+        <!-- <img id='dClose' src='../img/common/greenClose.png'> -->
+        <div class='mask'></div>
+        <div class='main'>
+            <div id='dHead' class='noScroll'>
+                <div class='bgCon' id='uHead'>
+                    <img src='../img/selectGuest/yes.png' class='flag'>
+                </div>
+                <div id='uInfo'>
+                    <div class='line0' id='uNickname'></div>
+                    <div class='line1'>
+                        <span id='uSex'></span>
+                        <span class='gap'>·</span>
+                        <span id='uAge'></span>
+                        <span class='gap'>·</span>
+                        <span id='uXingZuo'></span>
+                        <span class='gap'>·</span>
+                        <span id='uPlace'></span>
+                    </div>
+                </div>
+            </div>
+            <div class='scrollArea'>
+                <div class='box'>
+                    <div class='subtitle'>相册</div>
+                    <div class='content' id='uPhotos'></div>
+                </div>
+                <div class='box'>
+                    <div class='subtitle'>自我描述</div>
+                    <div class='content' id='uSelfIntro'></div>
+                </div>
+                <div class='box'>
+                    <div class='subtitle'>要求描述</div>
+                    <div class='content' id='uExpectation'></div>
+                </div>
+            </div>
+            <div class='footer hasBack noScroll'>
+                <button class='back'></button>
+                <div class='btns'>
+                    <button id='uChoose' class='single green'>选择</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='footer hasBack' id='footer'>
+        <button class='back'></button>
+        <div class='btns'>
+            <button id='rChoose' class='half white'>随机</button>
+            <button id='cChoose' class='half green'>确认选择</button>
+        </div>
+    </div>
+	<script src="../js/lib/zepto.js"></script>
+	<script src="../js/base.js?v=mv"></script>
+	<script src="../js/selectGuest.js?v=mv"></script>
+</body>
+</html>

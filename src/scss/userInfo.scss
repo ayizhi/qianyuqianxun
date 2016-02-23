@@ -1,0 +1,73 @@
+@import 'var';
+$sideGap:0.8rem;
+#top{
+  background-color: $green;
+  color: #fff;
+  padding: 1.5rem $sideGap;
+  text-align: center;
+  font-size: 0.7rem;
+  #uHead{
+    $headSize: 3.2rem;
+    display: inline-block;
+    width: $headSize;
+    height: $headSize;
+    border-radius: 50%;
+    position: relative;
+    border: solid 0.1rem #fff;
+    background-color: #eee;
+  }
+  #uName{
+
+  }
+  .infoText{
+    font-weight: normal;
+    line-height: 1em;
+    margin-top: 0.2rem;
+    // .gap{
+    //   margin: 0 0.05rem;
+    // }
+    span{
+      vertical-align: middle;
+    }
+  }
+  #uSex{
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0;
+    background-size: 100% 100%;
+  }
+  #uSex.male{
+    background-image: $maleFlagImg;
+  }
+  #uSex.female{
+    background-image: $femaleFlagImg;
+  }
+}
+// #actNav:active{
+//   opacity: 0.9;
+// }
+.item{
+  margin: 1rem $sideGap;
+  .subtitle{
+    font-size: 0.9rem;
+    color: #4a4a4a;
+  }
+  .content{
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+    color: #aaa;
+    margin-top: 0.5rem;
+  }
+  #photos{
+    .imgBlock{
+      border-radius: 0.3rem;
+      display: inline-block;
+      vertical-align: top;
+      width: 4rem;
+      height: 4rem;
+      margin-right: 0.3rem;
+      margin-top: 0.3rem;
+    }
+  }
+}

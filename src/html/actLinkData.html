@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no"/>
+    <title>约会挑战</title>
+    <link href="../css/base.css?v=mv" rel="stylesheet"/>
+    <link href="../css/actLinkData.css?v=mv" rel="stylesheet"/>
+</head>
+<body class='noTab'>
+	<!-- <div id='top' class='bgCon'>
+        <div id='danMuSwitch'></div>
+        <img class='sf'>
+        <div class="head">
+            <div class="bgCon"></div>
+            <img class="v" preSrc="../img/card/creator.png">
+        </div>
+        <div class="title"></div>
+        <div class="info"></div>
+    </div> -->
+    <div id='actNav' class='bgCon'>
+        <div id='creatorHead' class='bgCon'></div>
+        <div class='actTexts'>
+            <div class='line0' id='actTitle'></div>
+            <div class='line1'>
+                <span id='creatorName'></span>
+                <span class='gapPoint'>·</span>
+                <span id='actNum'></span>
+            </div>
+        </div>
+        <img class='arrow' preSrc='../img/common/whiteRight.png'>
+    </div>
+    <!-- <div id='progress'>
+        <button class='left cur'>报名</button>
+        <button class='center'>牵线</button>
+        <button class='right'>约会</button>
+    </div> -->
+    <div id='tabNav'>
+        <div class='nav current' targetId='graphTab'>图<div class='gap'></div></div>
+        <div class='nav' targetId='chartTab'>表</div>
+    </div>
+    <div class='tabPage current' id='graphTab'>
+        <div class='loading'>正在加载数据...</div>
+    </div>
+    <div class='tabPage' id='chartTab'>
+        <div class='loading'>正在加载数据...</div>
+    </div>
+    <!-- <div class='footer'>
+        <button class='single'>返回活动详情</button>
+    </div> -->
+	<script src="../js/lib/zepto.js"></script>
+	<script src="../js/base.js?v=mv"></script>
+	<script src="../js/actLinkData.js?v=mv"></script>
+</body>
+</html>

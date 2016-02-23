@@ -1,0 +1,49 @@
+@import 'var';
+$sideGap:0.8rem;
+#actNav{
+	$actHeight:3.3rem;
+	background-color: $green;
+	color: #fff;
+	height: $actHeight;
+	padding: 0 $sideGap;
+	#creatorHead{
+		$headSize: 2.2rem;
+		display: inline-block;
+		vertical-align: top;
+		width: $headSize;
+		height: $headSize;
+		border-radius: 50%;
+		margin-top: ($actHeight - $headSize)/2;
+
+		position: relative;
+		border: solid 1px #fff;
+		background-color: #eee;
+	}
+	.actTexts{
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 0.7rem;
+		.line0{
+			font-size: 0.8rem;
+			font-weight: normal;
+			line-height: 1em;
+			margin-top: 0.65rem;
+		}
+		.line1{
+			font-size: 0.7rem;
+			font-weight: normal;
+			line-height: 1em;
+			margin-top: 0.55rem;
+		}
+	}
+	$arrowHeight: 1rem;
+	.arrow{
+		float: right;
+		height: $arrowHeight;
+		margin-top: ($actHeight - $arrowHeight)/2;
+	}
+}
+#actNav:active{
+	//background-color: $greenClicked;
+	opacity: 0.9;
+}

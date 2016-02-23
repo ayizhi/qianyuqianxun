@@ -1,0 +1,64 @@
+@import 'var';
+body{
+  background-color: #f0eff5;
+}
+$sideGap: 1rem;
+#inputBox{
+  background-color: #fff;
+  .inputItem{
+    margin: 0 $sideGap;
+    position: relative;
+    $itemHeight: 2.5rem;
+    height: $itemHeight;
+    label{
+      font-size: 0.7rem;
+      color: #aaa;
+      display: inline-block;
+      padding: 1em 0;
+      vertical-align: middle;
+    }
+    input{
+      height: 100%;
+      width: 50%;
+      margin-left: 0.5rem;
+      font-size: 0.7rem;
+    }
+    #getCaptcha{
+      position: absolute;
+      right: 0;
+      $btnHeight: 1.7rem;
+      height: $btnHeight;
+      top: ($itemHeight - $btnHeight) / 2;
+      font-size: 0.6rem;
+      border-radius: 1rem;
+      padding: 0 0.5rem;
+      background-color: $green;
+      color: #fff;
+    }
+    #getCaptcha.normal:active{
+      background-color: $greenClicked;
+    }
+    #getCaptcha.counting{
+      background-color: #c5cac8;
+    }
+  }
+  .inputItem.first{
+    border-bottom: solid 1px #eee;
+    input{
+      width: 80%;
+    }
+  }
+}
+#submit{
+  text-align: center;
+  color: #fff;
+  background-color: $green;
+  font-size: 0.9rem;
+  border-radius: 0.95rem;
+  line-height: 1em;
+  padding: 0.5rem;
+  margin: 1.65rem $sideGap;
+}
+#submit:active{
+  background-color: $greenClicked;
+}

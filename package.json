@@ -1,0 +1,15 @@
+{
+  "name": "yueHuiTiaoZhanWeChat",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-concurrent": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-commands": "*",
+    "grunt-contrib-htmlmin": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-newer": "*"
+  }
+}

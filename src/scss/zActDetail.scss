@@ -1,0 +1,132 @@
+@import "var";
+body{
+  background-color: $gray;
+}
+.actInfo{
+  height: 3.6rem;
+  background-color: $green;
+  .personalInfo{
+    height: 2.6rem;
+    boder: 1px solid black;
+    padding:0.5rem 0.7rem;
+    font-size: 0.8rem;
+    font-family: "Microsoft YaHei";
+    color:#fff;
+
+    .head{
+      float: left;
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: #cccccc;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+    .information{
+      float:left;
+      margin-left: 0.5rem;
+
+      #actCreator{
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  #actDate{
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+}
+
+.theTitle{
+  height: 2rem;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #232323;
+  line-height: 2rem;
+  font-weight: lighter;
+}
+
+.theTable{
+  height: 22rem;
+  text-align: center;
+  padding-top: 0.825rem;
+
+  .cardLine{
+    text-align: center;
+    .guestCard{
+      display: inline-block;
+      width: 7.5rem;
+      height: 3.2rem;
+      background-color: #fff;
+      border-radius: 0.3rem;
+      margin:0.325rem 0 0.325rem 0;
+      font-size: 0.7rem;
+      color:black;
+      font-family: "Microsoft YaHei";
+        .head{
+          display: inline-block;
+          border-radius: 50%;
+          background-color: #cccccc;
+          width: 2rem;
+          height: 2rem;
+          display: inline-block;
+          margin-top: 0.6rem;
+        }
+        .guestInfo{
+          display: inline-block;
+          height: 2rem;
+          margin-left: 0.5rem;
+          //margin-top: -0.6rem;
+          .guestNum{
+            text-align: left;
+          }
+          .guestNum{
+            text-align: left;
+          }
+
+        }
+
+    }
+  }
+
+
+}
+.theTable .guestCard.left{
+  margin-left: 0;
+
+}
+.theTable .guestCard.right{
+  margin-left: 1.7rem;
+
+}
+.tableInfo{
+  height: 3rem;
+  background-color: #fff;
+  .numAndTitle{
+    float: left;
+    width: 33.333%;
+    .num{
+
+      font-size: 0.85rem;
+      color: #000;
+      font-family: "Microsoft YaHei";
+      text-align: center;
+      line-height: 1.7rem;
+      margin-top: 0.3rem;
+
+    }
+    .title{
+
+      font-size: 0.5rem;
+      color: #cccccc;
+      font-family: "Microsoft YaHei";
+      text-align: center;
+      line-height: 0.5rem;
+
+    }
+  }
+}
+
+
+

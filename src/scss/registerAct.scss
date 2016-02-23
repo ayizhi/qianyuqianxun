@@ -1,0 +1,143 @@
+@import 'var';
+$sideGap:0.8rem;
+@import 'actNav';
+#progress{
+	$buttonWidth: 2.5rem;
+	$buttonHeight: 0.9rem;
+	text-align: center;
+	border-top: solid 1px #D8D8D8;
+	margin: 1.25rem $sideGap -1.25rem;
+	button{
+		font-size: 0.5rem;
+		color: #fff;
+		font-weight: lighter;
+		width: $buttonWidth;
+		height: $buttonHeight;
+		background-color: #D8D8D8;
+		margin-top: -$buttonHeight/2;
+		vertical-align: top;
+		border-radius: 1.2rem;
+	}
+	button.cur{
+		background-color: #4A90E2;
+	}
+	button.left{
+		float: left;
+	}
+	button.right{
+		float: right;
+	}
+}
+#form{
+	clear: both;
+	padding: 0.5rem 0;
+	margin: 0 $sideGap;
+	.subTitle{
+		font-size: 0.7rem;
+		font-weight: bold;
+		color: #4A4A4A;
+		margin-top: 1rem;
+	}
+	.inputItem{
+		$inputHeight: 2.5rem;
+		$labelSize: 0.7rem;
+		$labelTop: ($inputHeight - $labelSize)/2;
+		border-bottom: solid 1px $borderColor;
+		label{
+			font-size: $labelSize;
+			color: #A5A5A5;
+			margin-top: $labelTop;
+			line-height: 1em;
+			width: 5em;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.input{
+			font-size: 0.7rem;
+			width: 75%;
+			height: $inputHeight;
+    		text-align: left;
+    		color: #333;
+    		vertical-align: top;
+		}
+		.input.short{
+			width: 20%;
+		}
+		.input.long{
+			width: 50%;
+		}
+		textarea.input{
+			height: 4rem;
+			margin: 0.7rem 0;
+		}
+	}
+	#photos{
+		.title{
+			font-size: 0.7rem;
+			color: #A5A5A5;
+			margin-top: 1rem;
+			line-height: 1em;
+		}
+		.imgs{
+			padding-bottom: 1.15rem;
+			border-bottom: solid 1px $borderColor;
+			.imgBlock{
+				display: inline-block;
+				vertical-align: top;
+				width: 4rem;
+				height: 4rem;
+				margin-right: 0.6rem;
+				margin-top: 0.75rem;
+				position: relative;
+				overflow: hidden;
+				.text{
+					position: absolute;
+					display: none;
+					left: 0;
+					width: 100%;
+					text-align: center;
+					bottom: 0;
+					font-size: 0.5rem;
+					color: #fff;
+					z-index: 6;
+				}
+				.delete{
+					position: absolute;
+					width: 0.4rem;
+					padding: 0.2rem;
+					right: 0rem;
+					top: 0rem;
+					background-color: $green;
+					z-index: 10;
+				}
+				.progress{
+					position: absolute;
+					z-index: 5;
+					display: none;
+				}
+			}
+			.imgBlock.ing{
+				.text{
+					display: block;
+				}
+				.progress{
+					display: block;
+					width: 100%;
+					left: 0;
+					bottom: 0;
+					background-color: $green;
+				}
+			}
+			.imgBlock.empty{
+				background-image: $addImg;
+				background-size: 100% 100%;
+			}
+			.imgBlock.head{
+				.text{
+					display: block;
+					background-color: rgba(0,0,0,0.5);
+				}
+			}
+		}
+	}
+}

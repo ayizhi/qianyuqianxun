@@ -1,0 +1,16 @@
+@import 'var';
+@import 'card';
+#cardDom{
+	.middle{
+		#uName{
+			color: #fff;
+			font-size: 0.7rem;
+			line-height: 1em;
+			margin-top: 0.2rem;
+		}
+		.title{
+			height: 2.05rem;
+			margin: 1.3rem 0;
+		}
+	}
+}

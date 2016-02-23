@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no"/>
+    <title>用户信息</title>
+    <link href="../css/base.css?v=mv" rel="stylesheet"/>
+    <link href="../css/userInfo.css?v=mv" rel="stylesheet"/>
+</head>
+<body class='noTab hasFooter'>
+    <div id='top' class='bgCon'>
+        <div id='uHead' class='bgCon'></div>
+        <div class='infoText up'>
+            <span id='uName'></span>
+            <span class='gap'>·</span>
+            <span id='uPlace'></span>
+        </div>
+        <div class='infoText'>
+            <span id='uAge'></span>
+            <span class='gap'>·</span>
+            <span id='uXingZuo'></span>
+            <span class='gap'>·</span>
+            <span id='uSex'></span>
+        </div>
+    </div>
+    <div class='item'>
+        <div class='subtitle'>相册</div>
+        <div id='photos' class='content'></div>
+    </div>
+    <div class='item'>
+        <div class='subtitle'>自我描述</div>
+        <div id='selfIntro' class='content'></div>
+    </div>
+    <div class='item'>
+        <div class='subtitle'>要求描述</div>
+        <div id='expectation' class='content'></div>
+     </div>
+     <div class='footer hasBack' id='footer'>
+        <button class='back'></button>
+        <div class='btns'>
+            <button class='green single'>关注</button>
+        </div>
+    </div>
+    <script src="../js/lib/zepto.js"></script>
+    <script src="../js/base.js?v=mv"></script>
+    <script src="../js/userInfo.js?v=mv"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+body,p,input,html{
+  margin: 0;
+  padding: 0;
+}
+
+body,html{
+  width: 100%;
+  height: 100%;
+  position:relative;
+  background-color: #f0eff5;
+}
+
+#shouJiYanZheng{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+
+
+  .inputArea{
+    background-color: #fff;
+    height: 5rem;
+    width: 100%;
+    .phoneNum{
+      width: 19.3rem;
+      border-bottom: 1px solid #ebeaf0;
+      margin-left: 1.4rem;
+      height: 2.5rem;
+
+      .numTitle{
+        float:left;
+        width: 2.5rem;
+        height: 2.5rem;
+        text-align: center;
+        line-height: 2.5rem;
+
+        font-size: 0.6rem;
+        font-family: "Microsoft YaHei";
+        color: #aaaaaa;
+
+      }
+      .numInput{
+        float:left;
+        width: 15rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        margin-left: 0.9rem;
+
+        font-family: "Microsoft YaHei";
+        font-size: 0.9rem;
+      }
+
+    }
+
+    .yanZhengNum{
+      width: 19.3rem;
+      margin-left: 1.4rem;
+      height: 2.5rem;
+      .yanZhengTitle{
+        float:left;
+        width: 2.5rem;
+        height: 2.5rem;
+        text-align: center;
+        line-height: 2.5rem;
+
+        font-size: 0.6rem;
+        font-family: "Microsoft YaHei";
+        color:#aaaaaa;
+
+      }
+      .yanZhengInput{
+        float:left;
+        width: 8rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        margin-left: 0.9rem;
+
+        font-family: "Microsoft YaHei";
+        font-size: 0.9rem;
+
+      }
+      .huoQuButton{
+        height: 1.65rem;
+        width: 5rem;
+        background-color: #2fbf79;
+        border-radius: 1rem;
+        float:right;
+        margin-right: 1.1rem;
+
+        line-height: 1.65rem;
+        text-align: center;
+        font-size:0.6rem;
+        font-family: "Microsoft YaHei";
+        color:#fff;
+
+        margin-top: 0.4rem;
+
+
+      }
+      .huoQuButton:active{
+        background-color: #2aa263;
+      }
+
+    }
+  }
+
+  .alert{
+    width: 17rem;
+    height: 0.8rem;
+    margin-left: 1.4rem ;
+    margin-top:0.5rem;
+
+    font-size: 0.6rem;
+    font-family: "Microsoft YaHei";
+    color: #e40000;
+    line-height: 0.8rem;
+  }
+
+
+  .yanZheng{
+    margin:1.65rem auto auto auto;
+    height: 1.9rem;
+    width: 19rem;
+    background-color: #2fbf79;
+
+    text-align:center;
+    line-height: 1.9rem;
+    font-size: 0.9rem;
+    font-family: "Microsoft YaHei";
+    color:#fff;
+
+    border-radius: 0.95rem;
+
+  }
+  .yanZheng:active{
+    background-color: #2aa263;
+
+  }
+}
